@@ -1,0 +1,31 @@
+// Configuración de Cloudflare Workers para publicar el frontend.
+// El backend (Express + PostgreSQL) se aloja aparte; este Worker le reenvía /api y /uploads.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Debe coincidir con el nombre del Worker en el panel de Cloudflare
+  "name": "proasa",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-01",
+
+  // Cloudflare ejecuta esto antes de publicar
+  "build": {
+    "command": "npm --prefix frontend ci && npm --prefix frontend run build"
+  },
+
+  "assets": {
+    "directory": "./frontend/dist",
+    "binding": "ASSETS",
+    // Rutas de React Router (/proyectos/..., /admin, etc.) devuelven index.html
+    "not_found_handling": "single-page-application",
+    // Estas rutas pasan primero por el Worker (proxy al backend)
+    "run_worker_first": ["/api/*", "/uploads/*"]
+  },
+
+  // API_ORIGIN (URL pública del backend, ej. "https://api.proasa.com.gt") se define en el panel:
+  // Settings → Variables and Secrets. keep_vars evita que un despliegue la borre.
+  "keep_vars": true,
+
+  "observability": {
+    "enabled": true
+  }
+}

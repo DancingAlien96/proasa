@@ -11,7 +11,8 @@ const app = express();
 // API_PORT tiene prioridad: algunas herramientas inyectan PORT para el frontend
 const PORT = process.env.API_PORT || process.env.PORT || 4000;
 
-app.set('trust proxy', 1);
+// Cantidad de proxies delante del backend (1 = plataforma de hosting; 2 = Worker de Cloudflare + plataforma)
+app.set('trust proxy', Number(process.env.TRUST_PROXY ?? 1));
 app.use(helmet());
 app.use(cors({ origin: process.env.CORS_ORIGIN?.split(',') ?? true }));
 app.use(express.json({ limit: '100kb' }));
