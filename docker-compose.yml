@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: proasa-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: proasa
+      POSTGRES_PASSWORD: proasa
+      POSTGRES_DB: proasa
+    ports:
+      - "5435:5432"
+    volumes:
+      - proasa_pgdata:/var/lib/postgresql/data
+
+volumes:
+  proasa_pgdata:
