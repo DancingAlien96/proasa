@@ -7,10 +7,8 @@
   "main": "worker/index.js",
   "compatibility_date": "2026-09-01",
 
-  // Cloudflare ejecuta esto antes de publicar
-  "build": {
-    "command": "npm --prefix frontend ci && npm --prefix frontend run build"
-  },
+  // El build lo hace "npm run build" (comando de build del panel de Cloudflare).
+  // Para publicar desde tu computadora: npm run deploy
 
   "assets": {
     "directory": "./frontend/dist",
