@@ -329,7 +329,7 @@ export default function Home() {
               <div>
                 <p className="eyebrow">Proyectos</p>
                 <h2 className="h2">
-                  Resultados que <em>fluyen</em>
+                  Proyectos <em>recientes</em>
                 </h2>
               </div>
               <Link to="/proyectos" className="btn btn-outline">Ver todos los proyectos</Link>

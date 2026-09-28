@@ -28,7 +28,7 @@
 
 .filter-chips button {
   padding: 9px 18px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   border: 1.5px solid var(--line);
   background: #fff;
   font: 600 14px var(--font-display);
@@ -54,6 +54,8 @@
 }
 
 .project-card {
+  box-shadow: var(--shadow-sm);
+  background: var(--card-bg);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -66,7 +68,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
   border-color: color-mix(in srgb, var(--blue) 30%, var(--line));
 }
@@ -102,7 +104,7 @@
   position: absolute;
   top: 14px;
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font: 600 12px var(--font-display);
   backdrop-filter: blur(8px);
 }
@@ -220,8 +222,8 @@
 .project-hero h1 {
   max-width: 900px;
   color: #fff;
-  font-size: clamp(36px, 5.6vw, 68px);
-  letter-spacing: -0.035em;
+  font-size: clamp(34px, 4.6vw, 56px);
+  letter-spacing: -0.02em;
   animation: rise 0.9s var(--ease) both;
 }
 
@@ -253,13 +255,6 @@
 .project-body p {
   font-size: 18px;
   line-height: 1.75;
-}
-
-.project-body p:first-child::first-letter {
-  float: left;
-  font: 600 64px/0.85 var(--font-display);
-  color: var(--blue);
-  margin: 8px 12px 0 0;
 }
 
 .project-facts {

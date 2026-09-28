@@ -133,22 +133,22 @@ export function MembraneHero({ className }) {
       <g className="float-a">
         <rect x="300" y="84" width="176" height="52" rx="14" fill="#ffffff" fillOpacity=".1" stroke="#ffffff" strokeOpacity=".25" />
         <circle cx="324" cy="110" r="8" fill="#7ef0d8" />
-        <text x="342" y="106" fill="#fff" fontFamily="Sora, sans-serif" fontSize="14" fontWeight="600">Ósmosis inversa</text>
-        <text x="342" y="124" fill="#a9c3d9" fontFamily="Inter, sans-serif" fontSize="12">Poros ~0.0001 µm</text>
+        <text x="342" y="106" fill="#fff" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="600">Ósmosis inversa</text>
+        <text x="342" y="124" fill="#a9c3d9" fontFamily="IBM Plex Sans, sans-serif" fontSize="12">Poros ~0.0001 µm</text>
       </g>
       <g className="float-b">
         <rect x="390" y="378" width="176" height="52" rx="14" fill="#ffffff" fillOpacity=".1" stroke="#ffffff" strokeOpacity=".25" />
         <path d="M414 394 c5 7 8 11 0 18 c-8 -7 -5 -11 0 -18z" fill="#19c3d6" />
-        <text x="432" y="400" fill="#fff" fontFamily="Sora, sans-serif" fontSize="14" fontWeight="600">Agua purificada</text>
-        <text x="432" y="418" fill="#a9c3d9" fontFamily="Inter, sans-serif" fontSize="12">Salida de permeado</text>
+        <text x="432" y="400" fill="#fff" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="600">Agua purificada</text>
+        <text x="432" y="418" fill="#a9c3d9" fontFamily="IBM Plex Sans, sans-serif" fontSize="12">Salida de permeado</text>
       </g>
       <g className="float-c">
         <rect x="16" y="360" width="160" height="52" rx="14" fill="#ffffff" fillOpacity=".1" stroke="#ffffff" strokeOpacity=".25" />
         <circle cx="38" cy="380" r="4" fill="#c98a4b" />
         <circle cx="47" cy="390" r="3" fill="#a3b1a0" />
         <circle cx="36" cy="392" r="3" fill="#8f7a5a" />
-        <text x="58" y="382" fill="#fff" fontFamily="Sora, sans-serif" fontSize="14" fontWeight="600">Agua cruda</text>
-        <text x="58" y="400" fill="#a9c3d9" fontFamily="Inter, sans-serif" fontSize="12">Sales y metales</text>
+        <text x="58" y="382" fill="#fff" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="600">Agua cruda</text>
+        <text x="58" y="400" fill="#a9c3d9" fontFamily="IBM Plex Sans, sans-serif" fontSize="12">Sales y metales</text>
       </g>
     </svg>
   );
@@ -246,7 +246,7 @@ export function MembraneRack({ className }) {
           <rect x="150" y={y - 26} width="10" height="52" fill="#1463ff" opacity=".85" />
           <rect x="400" y={y - 26} width="10" height="52" fill="#1463ff" opacity=".85" />
           <rect x="230" y={y - 12} width="100" height="24" rx="5" fill="#0b2a47" opacity=".85" />
-          <text x="280" y={y + 5} textAnchor="middle" fill="#7ef0d8" fontFamily="Sora, sans-serif" fontSize="12" fontWeight="600">
+          <text x="280" y={y + 5} textAnchor="middle" fill="#7ef0d8" fontFamily="IBM Plex Sans, sans-serif" fontSize="12" fontWeight="600">
             RO · {String(i + 1).padStart(2, '0')}
           </text>
           <path className="flow-line" d={`M170 ${y + 16} H390`} stroke="#19c3d6" strokeWidth="2" strokeDasharray="4 10" />
@@ -400,7 +400,7 @@ export function NetworkMap({ className }) {
       <circle cx={hub.x} cy={hub.y} r="30" fill="#1463ff" />
       <path d={`M${hub.x} ${hub.y - 14} c8 10 12 15 0 26 c-12 -11 -8 -16 0 -26z`} fill="#fff" />
       <rect x={hub.x - 78} y={hub.y + 42} width="156" height="30" rx="15" fill="#fff" />
-      <text x={hub.x} y={hub.y + 62} textAnchor="middle" fill="#051a2e" fontFamily="Sora, sans-serif" fontSize="13" fontWeight="600">
+      <text x={hub.x} y={hub.y + 62} textAnchor="middle" fill="#051a2e" fontFamily="IBM Plex Sans, sans-serif" fontSize="13" fontWeight="600">
         PROASA · Chiquimula
       </text>
     </svg>

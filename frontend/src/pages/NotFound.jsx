@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <PageHero
       eyebrow="Error 404"
-      title="Esta página se filtró"
+      title="Página no encontrada"
       lead="La página que buscas no existe o fue movida."
     >
       <div className="hero-actions">

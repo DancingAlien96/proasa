@@ -36,7 +36,7 @@
 
 .adm-brand span {
   padding: 3px 9px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: rgb(126 240 216 / 0.14);
   color: var(--mint);
   font: 600 12px var(--font-display);
@@ -268,7 +268,7 @@
   top: 10px;
   left: 10px;
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font: 600 12px var(--font-display);
   backdrop-filter: blur(6px);
 }
@@ -426,7 +426,7 @@
 
 .adm-progress-bar {
   height: 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--soft);
   overflow: hidden;
 }
@@ -481,7 +481,7 @@
   top: 8px;
   left: 8px;
   padding: 3px 9px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--blue);
   color: #fff;
   font: 600 11px var(--font-display);
@@ -573,7 +573,7 @@
   flex: none;
   width: 42px;
   height: 24px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: #c3d2df;
   transition: background 0.2s;
 }

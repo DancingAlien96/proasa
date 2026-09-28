@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} PROASA · proasa.com.gt</span>
-          <span>Hecho con orgullo en Guatemala</span>
+          <span>Chiquimula, Guatemala</span>
         </div>
       </div>
     </footer>
