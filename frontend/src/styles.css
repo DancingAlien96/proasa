@@ -728,6 +728,11 @@ strong {
     display: none;
   }
 
+  /* Sin el botón de acción, la hamburguesa se alinea sola a la derecha */
+  .menu-toggle {
+    margin-left: auto;
+  }
+
   .topbar-email {
     display: none !important;
   }
